@@ -1,0 +1,56 @@
+form {
+    margin-bottom: 20px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    margin-top: 0;
+  }
+  
+  .service-card p {
+    margin: 5px 0;
+  }
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {  
+    text-decoration: underline;
+  }
