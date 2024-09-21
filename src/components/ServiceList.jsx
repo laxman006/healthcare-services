@@ -1,15 +1,18 @@
 import React from 'react';
-import ServiceCard from './Servicecard';
+import ServiceItem from './ServiceItem';
+import {Row} from 'react-bootstrap'
 
-
-const ServiceList = ({ services }) => {
-    console.log( "is s" ,services);
+const ServiceList = ({ services, setServices }) => {
   return (
-    <div className="service-list">
+    <Row>
       {services.map((service, index) => (
-        <ServiceCard key={index} service={service} />
+        <ServiceItem 
+          key={index} 
+          service={service} 
+          index={index} 
+          setServices={setServices} />
       ))}
-    </div>
+    </Row>
   );
 };
 
