@@ -19,7 +19,7 @@ const ServiceItem = ({ service, index, setServices }) => {
       );
     }
   };
-
+  
   return (
     <div>
       <h3>{service.name}</h3>
@@ -27,6 +27,7 @@ const ServiceItem = ({ service, index, setServices }) => {
       <p>{service.price}</p>
       <button onClick={handleUpdate}>Update</button>
       <button onClick={handleDelete}>Delete</button>
+        
     </div>
   );
 };

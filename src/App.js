@@ -1,6 +1,7 @@
 import React ,{useState , useEffect} from "react";
 import ServiceForm from "./components/ServiceForm";
 import ServiceList from "./components/ServiceList";
+import AddService from "./components/AddService";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import './styles.css';
@@ -28,7 +29,7 @@ const App = () =>{
             <NavBar />
           <Routes>
             <Route path="/" element={<ServiceList services={services} setServices={setServices} />} />
-            <Route path="/add" element={<ServiceForm setServices={setServices} />} />
+            <Route path="/add" element={<AddService setServices={setServices} />} />
           </Routes>
         </Router>
         </div>

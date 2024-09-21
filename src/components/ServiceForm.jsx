@@ -1,12 +1,13 @@
 import React , {useState} from 'react'
-import ServiceItem from './Serviceitem';
+import { useNavigate } from 'react-router-dom';
+
 
 const ServiceForm = ({setServices}) => {
-  // state for service inputs
-    const [services, setServicesLocal] = useState([]);
+
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [price, setPrice] = useState('');
+    const navigate =useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -16,6 +17,7 @@ const ServiceForm = ({setServices}) => {
         setName('');
         setDescription('');
         setPrice('');
+        navigate('/')
 
     }
   return (
