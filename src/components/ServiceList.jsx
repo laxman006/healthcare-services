@@ -1,9 +1,10 @@
 import React from 'react';
 import ServiceItem from './ServiceItem';
+import {Row} from 'react-bootstrap'
 
 const ServiceList = ({ services, setServices }) => {
   return (
-    <div>
+    <Row>
       {services.map((service, index) => (
         <ServiceItem 
           key={index} 
@@ -11,7 +12,7 @@ const ServiceList = ({ services, setServices }) => {
           index={index} 
           setServices={setServices} />
       ))}
-    </div>
+    </Row>
   );
 };
 
